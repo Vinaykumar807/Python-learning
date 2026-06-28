@@ -1,19 +1,19 @@
-# # String Manipulation 
+# String Manipulation 
 
-# #1. Concatenation 
+#1. Concatenation 
 
-# first_name = "Vinay"
-# last_name = "Kumar"
-# full_name = first_name + " " + last_name  # the double quotes are used for space btw the names 
-# print(full_name)
+first_name = "Vinay"
+last_name = "Kumar"
+full_name = first_name + " " + last_name  # the double quotes are used for space btw the names 
+print(full_name)
 
-# #2. Repetition 
+#2. Repetition 
 
-# message="Warning! "
-# print(message * 10)  #It will repet 10 times 
+message="Warning! "
+print(message * 10)  #It will repet 10 times 
 
-# Name = input("Enter your name :  ")
-# print(Name * 10 )
+Name = input("Enter your name :  ")
+print(Name * 10 )
 
 # Upper , lower , strip , replace 
 
@@ -25,5 +25,6 @@ print(name.replace("Vinay Kumar", "Sharath"))   #Replace the Char
 
 # Length 
 
-name = "Vijarraj is the king"
-print(len(name))
+name = "Vinay is the king"
+print(len(name))  #length of the input string (including space)
+
