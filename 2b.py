@@ -25,6 +25,13 @@ print(name.replace("Vinay Kumar", "Sharath"))   #Replace the Char
 
 # Length 
 
-name = "Vinay is the king"
+name = "Krishna Devaraya is a king of Vijaynagara"
 print(len(name))  #length of the input string (including space)
 
+#index and positions 
+
+Name = "Vinay"
+print(Name[3]) # index = position - 1
+print(Name[0:])  # intail to end 
+print (Name[2:4]) # Specific words 
+print(Name[::2])  # Skiping the words like (Vinay) output (vny)
