@@ -40,12 +40,27 @@
 # for i in range(1,11) :  # "range" is used print the all elements from 1 to 10 (Expect 11) Besacuse last element will not consider
 #     print(i)
 
-i = 0
-for i in range(2,10,2) :  # This loop prints only even number 
-    print(i, end=" ")   #  "end" is used to come all elements in a single line
+# i = 0
+# for i in range(2,10,2) :  # This loop prints only even number 
+#     print(i, end=" ")   #  "end" is used to come all elements in a single line
 
 
-name = "Vinay Kumar"
-for letters in name :    # so this will print each character of a string in loop 
-    print(letters)    # Out put :- v i n a y  k u m a r ( in a ascending order)
-    print(letters * 3)
+# name = "Vinay Kumar"
+# for letters in name :    # so this will print each character of a string in loop 
+#     print(letters)    # Out put :- v i n a y  k u m a r ( in a ascending order)
+#     print(letters * 3) # Prints letters 3 times like vvv
+
+
+cities = ["Raichur","Bengalore","Shaktinagra","Gandhal"]
+for city in cities :
+    if city == "Shaktinagra":
+        print(f"Found {city}!")
+        break                  #Using "break" statement is used to exit the loop when the key is found
+    print(city)
+    
+cities = ["Raichur","Bengalore","Shaktinagra","Gandhal"]
+for city in cities :
+    if city == "Shaktinagra":
+        continue               
+    print(city)
+    
