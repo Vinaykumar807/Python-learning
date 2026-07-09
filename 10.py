@@ -2,10 +2,10 @@
 # It is a reusable block of code that performs a specific task when function called . 
 # It is useful to organize code , make it reusable and reduce redundancy (repetation)
 
-# def boss():                # Defining the function 
-#     print("Hello Boss!!")
-# boss()                     # Calling the function
-# boss()
+def boss():                # Defining the function 
+    print("Hello Boss!!")
+boss()                     # Calling the function
+boss()
 
 
 # functions Parameters :- 
@@ -30,7 +30,7 @@ tables(6)
 
 # Default parameters 
 
-def marriage(boy,girl= "Girl"):         # Parametrs 
-    print(f"{boy} married {girl}")
+def marriage(boy,girl= "Girl"):    # Girl is a "default value" coz if we not mentioned the girl name it will get error so that's way we took a one default value 
+    print(f"{boy} married {girl}")  
 
-marriage("Vinay")
+marriage("Vinay")  # Output is : Vinay married Girl 
