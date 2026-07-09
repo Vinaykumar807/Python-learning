@@ -34,3 +34,14 @@ def marriage(boy,girl= "Girl"):    # Girl is a "default value" coz if we not men
     print(f"{boy} married {girl}")  
 
 marriage("Vinay")  # Output is : Vinay married Girl 
+ 
+
+# Return value 
+
+def func(num):
+    return int(num+2)  
+a = 10 
+b = 1 + func(100 )
+print(b)
+
+
