@@ -1,41 +1,41 @@
-# # Functions Advance concepts 
+# Functions Advance concepts 
 
-# # Key Word Arguments 
+# Key Word Arguments 
 
-# def func(name , age ):                 # Passing the value to a function by specifying the parameters names 
-#     print(f"Name :- {name}, Age:- {age}")
+def func(name , age ):                 # Passing the value to a function by specifying the parameters names 
+    print(f"Name :- {name}, Age:- {age}")
 
-# func("vinay", 20)
+func("vinay", 20)
 
 
-# # Variable length arguments 
+# Variable length arguments 
 
-# def num(*numbers):    # writing before (*) gives in the form of "tuple"
-#     print(numbers)    # Outout is :- (10,20,30,40)
-# num(10,20,30,40)
+def num(*numbers):    # writing before (*) gives in the form of "tuple"
+    print(numbers)    # Outout is :- (10,20,30,40)
+num(10,20,30,40)
 
-# def add(*nums):
-#     return sum(nums)
-# print(add(10,50,80))
+def add(*nums):
+    return sum(nums)
+print(add(10,50,80))
 
-# # Lambda function 
-# # It is a small anonymous function that can take any numbers of arguments but has only one expression 
+# Lambda function 
+# It is a small anonymous function that can take any numbers of arguments but has only one expression 
 
-# add = lambda a,b : a+b     # It should contain only one expression 
-# print(add(99,1))
+add = lambda a,b : a+b     # It should contain only one expression 
+print(add(99,1))
 
-# double = lambda x: x*2
-# print(double(100))
+double = lambda x: x*2
+print(double(100))
 
-# lists = [
-#     {"name" : "Vinay","Marks" : 90},
-#     {"name" : "Shrusti","Marks" : 100},
-#     {"name" : "Raju",  "Marks" : 50},
-# ]
-# lists.sort(key = lambda x : x["Marks"], reverse = True)
-# print(lists)
+lists = [
+    {"name" : "Vinay","Marks" : 90},
+    {"name" : "Shrusti","Marks" : 100},
+    {"name" : "Raju",  "Marks" : 50},
+]
+lists.sort(key = lambda x : x["Marks"], reverse = True)
+print(lists)
 
-# Nested Function 
+#Nested Function 
 
 def calculate(a,b):
     def add():
