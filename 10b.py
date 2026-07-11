@@ -52,3 +52,19 @@ def calculate(a,b):
     div()
 
 calculate(5,5)
+
+# Example 1 
+x = [1,2,3,4,5,55,5,]
+
+def func(x):
+    for x in x :
+        print(x, end = " ")
+func(x)
+# Example 2 
+
+def func(x):
+    if x %2 == 0:
+        print("Num is Even")
+    else :
+        print("num is odd")
+func(x = int(input("enter a number :")))
