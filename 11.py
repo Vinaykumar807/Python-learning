@@ -1,62 +1,34 @@
-# Functions Advance concepts 
+# Recursion :- 
+# Recursion occurs when a function call itself.
+# Basically it is extend version or similar to "loops"
 
-# Key Word Arguments 
+# Recursive function  
 
-def func(name , age ):                 # Passing the value to a function by specifying the parameters names 
-    print(f"Name :- {name}, Age:- {age}")
+# def func(n): 
+#     if n == 10 :        # It is Base Case :- it is a very important in a recursion 
+#         return          
+#     print(n)
+#     func(n+1)           # here we calling function itself (func())
+# func(1)
 
-func("vinay", 20)
+# factorial of n 
+
+# def num(n):
+#     if n == 0 or n == 1 :
+#         return n
+#     else :
+#         return n * num(n-1)    # here we calling the function itself 
+# print(num(3))
 
 
-# Variable length arguments 
+# sum of first n natural numbers 
 
-def num(*numbers):    # writing before (*) gives in the form of "tuple"
-    print(numbers)    # Outout is :- (10,20,30,40)
-num(10,20,30,40)
+def natu(n):
+    if n == 0 :
+        return 0
+    else :
+         return natu(n-1 ) +n 
 
-def add(*nums):
-    return sum(nums)
-print(add(10,50,80))
+sum = natu(90)
+print(sum)
 
-# Lambda function 
-# It is a small anonymous function that can take any numbers of arguments but has only one expression 
-
-add = lambda a,b : a+b     # It should contain only one expression 
-print(add(99,1))
-
-double = lambda x: x*2
-print(double(100))
-
-lists = [
-    {"name" : "Vinay","Marks" : 90},
-    {"name" : "Shrusti","Marks" : 100},
-    {"name" : "Raju",  "Marks" : 50},
-]
-lists.sort(key = lambda x : x["Marks"], reverse = True)
-print(lists)
-
-#Nested Function 
-
-def calculate(a,b):
-    def add():
-        print(a+b)
-    def sub():
-        print(a-b)
-    def mult():
-        print(a*b)
-    def div():
-        print(a/b)
-    add()
-    sub()
-    mult()
-    div()
-
-calculate(5,5)
-
-# Example 1 
-x = [1,2,3,4,5,55,5,]
-
-def func(x):
-    for x in x :
-        print(x, end = " ")
-func(x)
