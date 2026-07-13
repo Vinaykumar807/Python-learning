@@ -32,3 +32,12 @@ def natu(n):
 sum = natu(90)
 print(sum)
 
+# Printing lists using recursion 
+
+def prt_list(list, idx=0):
+    if idx == len(list):
+        return 
+    print(list[idx])
+    prt_list(list,idx+1)
+num = [1,2,3,4,5,6]
+prt_list(num)
