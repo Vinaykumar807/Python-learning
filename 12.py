@@ -42,12 +42,3 @@ def prt_list(list, idx=0):
 num = [1,2,3,4,5,6]
 prt_list(num)
 
-#Comments 
-
-Name = "Vinay Kumar"  #Name of the student 
-Age = 20              # Age of the Student 
-College = "Garden city univesity"  # College of the student 
-CGPA = 9.10  # CGPA of the student 
- 
-print(Name, "\n", Age, "\n", College, "\n", CGPA)
-# output is printed on the treminal 
